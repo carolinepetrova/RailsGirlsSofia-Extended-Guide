@@ -14,7 +14,7 @@ product = ""
 sum = 0
 
 while product != "done"
-	product = gets.chomp # when we type a word in the console and hit enter we get it with a newline tag "\n". Chomp removes the tag from the string
+	product = gets.strip # when we type a word in the console and hit enter we get it with a newline tag "\n". strip removes the tag from the string
 	if !store[product]
 		puts "Nqma takuv product"
 		# exit 1 stops the program
