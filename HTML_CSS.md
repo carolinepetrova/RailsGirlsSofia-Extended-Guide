@@ -51,7 +51,7 @@
 
 ## CSS
 
-Чрез CSS ние стилизираме HTML файловете. 
+Чрез CSS ние стилизираме HTML кодът ни. 
 
 CSS може да се пише: 
 - директно в html файла между таговете `<style></style>` 
@@ -68,4 +68,111 @@ CSS може да се пише:
 
 ### Примери
 
+Нека имаме съответният html код
+```HTML
+<html>
+   <head>
+      <title>Hello, world!</title>
+   </head>
+   <body>
+       <h1>Привет, аз съм фен на <span>котки</span></h1>
+       <p>Тук ще видите <span>любимите</span> ми породи:</p>
+       <img src="cat1.jpg" alt="Персийска">
+       <img src="cat2.jpg" alt="Улична превъзходна">
+       <img src="cat3.jpg" alt="Късокосместа дразнителна">
+   </body>
+  </html>
+```
 
+Директно можем да стилизираме всички html тагове:
+
+```CSS
+body {
+background-color: red;
+}
+
+h1 {
+font-size:26px;
+color: white;
+}
+
+p {
+font-size: 18px;
+}
+
+div {
+background-color: yellow;
+}
+
+span {
+color: blue;
+}
+
+img {
+border: 3px solid pink;
+}
+```
+
+Това ще направи всички елементи оградени с тагове в един и същ стил. Ние често искаме разнообразни цветове, различни ширини на елементите, позициониране и тн.
+
+Нека променим HTML кода:
+```HTML
+<html>
+   <head>
+      <title>Hello, world!</title>
+   </head>
+   <body>
+       <h1 id="welcome-msg">Привет, аз съм фен на <span>котки</span></h1>
+       <p id="welcome-slogan">Тук ще видите <span>любимите</span> ми породи:</p>
+       <img src="cat1.jpg" alt="Персийска" class="black-border">
+       <img src="cat2.jpg" alt="Улична превъзходна" class="grey-border">
+       <img src="cat3.jpg" alt="Късокосместа дразнителна" class="black-border">
+   </body>
+  </html>
+```
+Tака елементите ни ще бъдат стилизирани по различен начин или с допълнен стил към основния, зададен на тага
+
+```CSS
+body {
+background-color: red;
+}
+
+h1 {
+font-size:26px;
+color: white;
+}
+
+p {
+font-size: 18px;
+}
+
+div {
+background-color: yellow;
+}
+
+span {
+color: blue;
+}
+
+img {
+border: 3px solid pink;
+}
+
+#welcome-msg {
+text-decoration: underline;
+}
+
+#welcome-slogan {
+font-size: 20px;
+color: black;
+}
+
+.black-border {
+border: 5px solid black;
+}
+
+.grey-border {
+border-color: grey;
+}
+
+```
