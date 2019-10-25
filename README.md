@@ -7,3 +7,6 @@
 - [HTML+CSS - основни понятия и тагове](https://github.com/carolinepetrova/RailsGirlsSofia-Extended-Guide/blob/master/HTML_CSS.md)
 - [Ruby - Основни типове данни и някои техни методи](https://github.com/carolinepetrova/RailsGirlsSofia-Extended-Guide/blob/master/Ruby.md)
 - [Уеб приложение със Sinatra](https://github.com/carolinepetrova/RailsGirlsSofia-Extended-Guide/blob/master/WebApp_Ruby_Sinatra.md)
+
+### Oт тук насетне какво?
+Will magically appear after the workshop :)
